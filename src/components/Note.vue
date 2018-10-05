@@ -13,7 +13,6 @@
             <textarea ref="content">
                 
             </textarea>
-            <p> {{this.id}} </p>
         </div>
     </div>
 </template>
@@ -42,7 +41,6 @@ export default {
   data () {
     
     return {
-      id: null,
       title: "title",
       edit: false,
       isDown: false,
@@ -52,7 +50,6 @@ export default {
 
   },
   mounted() {
-    this.id = this._uid
     window.addEventListener('mouseup', this.mouseUp);
     window.addEventListener('mousemove', this.mouseMove);
   },

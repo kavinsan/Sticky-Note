@@ -36,7 +36,7 @@ export default {
     },
     deleteNote: function(id) {
 
-      this.notes = this.notes.filter(note => notes.id !== id);
+      this.notes = this.notes.filter(note => note.id !== id);
       console.log(this.notes)
     }
   }
